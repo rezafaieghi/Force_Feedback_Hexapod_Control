@@ -16,7 +16,7 @@
 #include <chrono>
 #include <conio.h>
 
-#import "D:\Google Drive\UWO\Postdoc\Hexapod API\HexapodSDK\bin\x64\HexapodCOM.dll"
+#import "..\external\HexapodSDK\bin\x86\HexapodCOM.dll"
 using namespace std;
 using std::cin;
 using std::cout;

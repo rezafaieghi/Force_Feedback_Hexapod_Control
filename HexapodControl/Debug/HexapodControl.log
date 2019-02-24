@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(186): warning C4101: 'ex': unreferenced local variable
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(283): warning C4101: 'ex': unreferenced local variable
+  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.exe
+  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.pdb (Full PDB)
