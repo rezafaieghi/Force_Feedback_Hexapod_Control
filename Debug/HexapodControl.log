@@ -1,5 +1,0 @@
-﻿  Source.cpp
-c:\users\reza\desktop\load cell project\mhp and loadcell code\source.cpp(186): warning C4101: 'ex': unreferenced local variable
-c:\users\reza\desktop\load cell project\mhp and loadcell code\source.cpp(283): warning C4101: 'ex': unreferenced local variable
-  HexapodControl.vcxproj -> C:\Users\Reza\Desktop\Load Cell Project\MHP and LoadCell Code\Debug\HexapodControl.exe
-  HexapodControl.vcxproj -> C:\Users\Reza\Desktop\Load Cell Project\MHP and LoadCell Code\Debug\HexapodControl.pdb (Full PDB)
