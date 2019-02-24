@@ -1,0 +1,40 @@
+﻿  xmltok.c
+  xmlrole.c
+  xmlparse.c
+  stack.c
+  node.c
+  ftrt.c
+  ftconfig.c
+  expatls.c
+c:\users\reza\desktop\load cell project\mhp and loadcell code\external\atidaq c library\atidaq\expatls.c(167): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\users\reza\desktop\load cell project\mhp and loadcell code\external\atidaq c library\atidaq\expatls.c(290): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  dom.c
+c:\users\reza\desktop\load cell project\mhp and loadcell code\external\atidaq c library\atidaq\dom.c(616): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  Generating Code...
+  Stdafx.cpp
+  ATIDAQHardwareInterface.cpp
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\ati_compiler.h(63): fatal error C1190: managed targeted code requires a '/clr' option
+  ATICombinedDAQFT.cpp
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\ati_compiler.h(63): fatal error C1190: managed targeted code requires a '/clr' option
+  AssemblyInfo.cpp
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(3): error C2653: 'System': is not a class or namespace name
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(3): error C2871: 'Reflection': a namespace with this name does not exist
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(4): error C2653: 'System': is not a class or namespace name
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(4): error C2871: 'CompilerServices': a namespace with this name does not exist
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(11): warning C4467: usage of ATL attributes is deprecated
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(11): error C2337: 'AssemblyTitleAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(12): error C2337: 'AssemblyDescriptionAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(13): error C2337: 'AssemblyConfigurationAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(14): error C2337: 'AssemblyCompanyAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(15): error C2337: 'AssemblyProductAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(16): error C2337: 'AssemblyCopyrightAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(17): error C2337: 'AssemblyTrademarkAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(18): error C2337: 'AssemblyCultureAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(31): error C2337: 'AssemblyVersionAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(55): error C2337: 'AssemblyDelaySignAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(56): error C2337: 'AssemblyKeyFileAttribute': attribute not found
+c:\users\reza\desktop\load cell project\mhp and loadcell code\atidaq\assemblyinfo.cpp(57): error C2337: 'AssemblyKeyNameAttribute': attribute not found
+  Generating Code...

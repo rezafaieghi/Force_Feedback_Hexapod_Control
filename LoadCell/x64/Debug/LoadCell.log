@@ -1,0 +1,8 @@
+﻿cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  Nano25E.cpp
+Nano25E.cpp(46): warning C4244: '=': conversion from 'float64' to 'float', possible loss of data
+Nano25E.cpp(150): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
+Nano25E.cpp(206): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
+Nano25E.cpp(227): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
+Nano25E.cpp(293): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
+  LoadCell.vcxproj -> C:\Users\Reza\Desktop\Load Cell Project\MHP and LoadCell Code\x64\Debug\LoadCell.lib
