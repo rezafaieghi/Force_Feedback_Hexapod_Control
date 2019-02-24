@@ -2,8 +2,6 @@
 
 #include <fstream>
 
-
-
 int32 CVICALLBACK EveryNCallback(TaskHandle taskHandle,
 	int32 everyNsamplesEventType, uInt32 nSamples, void *callback_package) {
 	int32 error = 0;
@@ -23,11 +21,11 @@ int32 CVICALLBACK EveryNCallback(TaskHandle taskHandle,
 		&read,                                // samples per channel read
 		NULL));                               // reserved
 
-											  // Voltage array's samples are grouped by channel.
-											  // e.g.
-											  //   10 SAMPLES_PER_CHANNEL grouped by channel
-											  //   transducer_0    transducer_1   ...  transducer_6
-											  //   [0, 1 ..., 9,   10, 11 ..., 19 ...  50, 51 ..., 59]    
+												// Voltage array's samples are grouped by channel.
+												// e.g.
+												//   10 SAMPLES_PER_CHANNEL grouped by channel
+												//   transducer_0    transducer_1   ...  transducer_6
+												//   [0, 1 ..., 9,   10, 11 ..., 19 ...  50, 51 ..., 59]    
 	if (read > 0) {
 		// get most recent values and put into raw voltages
 		for (unsigned int i = 0; i < DOF; ++i) {
@@ -97,9 +95,9 @@ LoadCellClass::~LoadCellClass()
 {
 	// ATI calibration
 	if (cal_ != NULL) destroyCalibration(cal_);
-	
+
 	// DAQmx tasks
-	if (task_handle_ != 0) 
+	if (task_handle_ != 0)
 	{
 		DAQmxStopTask(task_handle_);
 		DAQmxClearTask(task_handle_);
@@ -109,10 +107,10 @@ LoadCellClass::~LoadCellClass()
 
 
 int LoadCellClass::Initialize(std::string calibration_path,
-			const float* transform,
-			const float sample_rate,
-			std::string channel,
-			bool set_filter)
+	const float* transform,
+	const float sample_rate,
+	std::string channel,
+	bool set_filter)
 {
 	unsigned int err_val = SUCCESS;
 
@@ -246,7 +244,7 @@ int LoadCellClass::SetCalibration(const std::string calibration_file_path)
 
 int LoadCellClass::GetVoltages(float *voltages) const
 {
-	if (task_handle_ == 0) 
+	if (task_handle_ == 0)
 	{
 		DBGPRINT("Load cell not started\n");
 		return ERROR_DAQ_NOT_STARTED;
@@ -263,7 +261,7 @@ int LoadCellClass::GetVoltages(float *voltages) const
 
 int LoadCellClass::GetRawVoltages(float* voltages) const
 {
-	if (task_handle_ == 0) 
+	if (task_handle_ == 0)
 	{
 		DBGPRINT("Load cell not started\n");
 		return ERROR_DAQ_NOT_STARTED;
@@ -343,7 +341,7 @@ int LoadCellClass::SetBias()
 
 int LoadCellClass::GetBias(float* bias) const
 {
-	if (!bias_set_flag) 
+	if (!bias_set_flag)
 	{
 		return ERROR_BIAS_NOT_SET;
 	}

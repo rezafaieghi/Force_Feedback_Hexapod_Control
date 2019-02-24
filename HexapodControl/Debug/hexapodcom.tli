@@ -3,7 +3,7 @@
 // d:\github\force_feedback_hexapod_control\hexapodcontrol\debug\hexapodcom.tli
 //
 // Wrapper implementations for Win32 type library ..\external\HexapodSDK\bin\x86\HexapodCOM.dll
-// compiler-generated file created 02/24/19 at 13:09:03 - DO NOT EDIT!
+// compiler-generated file created 02/24/19 at 13:33:54 - DO NOT EDIT!
 
 #pragma once
 

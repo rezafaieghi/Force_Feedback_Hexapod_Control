@@ -1,5 +1,14 @@
 ﻿  Source.cpp
-d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(186): warning C4101: 'ex': unreferenced local variable
-d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(283): warning C4101: 'ex': unreferenced local variable
-  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.exe
-  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.pdb (Full PDB)
+d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(41): warning C4005: 'TRUE': macro redefinition
+  d:\github\force_feedback_hexapod_control\external\daqmx ansi c dev\include\nidaqmx.h(120): note: see previous definition of 'TRUE'
+d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(42): warning C4005: 'FALSE': macro redefinition
+  d:\github\force_feedback_hexapod_control\external\daqmx ansi c dev\include\nidaqmx.h(123): note: see previous definition of 'FALSE'
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(201): warning C4101: 'ex': unreferenced local variable
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(298): warning C4101: 'ex': unreferenced local variable
+Source.obj : error LNK2019: unresolved external symbol "public: __thiscall LoadCell::LoadCellClass::LoadCellClass(void)" (??0LoadCellClass@LoadCell@@QAE@XZ) referenced in function _main
+Source.obj : error LNK2019: unresolved external symbol "public: __thiscall LoadCell::LoadCellClass::~LoadCellClass(void)" (??1LoadCellClass@LoadCell@@QAE@XZ) referenced in function _main
+Source.obj : error LNK2019: unresolved external symbol "public: int __thiscall LoadCell::LoadCellClass::Initialize(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float const *,float,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool)" (?Initialize@LoadCellClass@LoadCell@@QAEHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBMM0_N@Z) referenced in function "void __cdecl GetLoadCellLoads(class LoadCell::LoadCellClass &)" (?GetLoadCellLoads@@YAXAAVLoadCellClass@LoadCell@@@Z)
+Source.obj : error LNK2019: unresolved external symbol "public: int __thiscall LoadCell::LoadCellClass::GetLoads(float *)" (?GetLoads@LoadCellClass@LoadCell@@QAEHPAM@Z) referenced in function "void __cdecl GetLoadCellLoads(class LoadCell::LoadCellClass &)" (?GetLoadCellLoads@@YAXAAVLoadCellClass@LoadCell@@@Z)
+Source.obj : error LNK2019: unresolved external symbol "public: int __thiscall LoadCell::LoadCellClass::GetRawLoads(float *)" (?GetRawLoads@LoadCellClass@LoadCell@@QAEHPAM@Z) referenced in function "void __cdecl GetLoadCellLoads(class LoadCell::LoadCellClass &)" (?GetLoadCellLoads@@YAXAAVLoadCellClass@LoadCell@@@Z)
+Source.obj : error LNK2019: unresolved external symbol "public: int __thiscall LoadCell::LoadCellClass::SetBias(void)" (?SetBias@LoadCellClass@LoadCell@@QAEHXZ) referenced in function "void __cdecl GetLoadCellLoads(class LoadCell::LoadCellClass &)" (?GetLoadCellLoads@@YAXAAVLoadCellClass@LoadCell@@@Z)
+D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.exe : fatal error LNK1120: 6 unresolved externals

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexapodControl", "HexapodControl\HexapodControl.vcxproj", "{F5400061-BB7F-421C-AA74-858AB02FE9D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B5D56D1-F209-44C1-AFE1-321BB787D131} = {8B5D56D1-F209-44C1-AFE1-321BB787D131}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadCell", "LoadCell\LoadCell.vcxproj", "{8B5D56D1-F209-44C1-AFE1-321BB787D131}"
 EndProject

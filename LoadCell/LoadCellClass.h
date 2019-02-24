@@ -9,19 +9,9 @@
 
 
 
-#ifndef DEBUG
-#define DEBUG false
-#endif
-
 #ifndef FILENAME
 #define FILENAME (strrchr(__FILE__, '\\') \
   ? strrchr(__FILE__, '\\') + 1 : __FILE__)
-#endif
-
-#ifndef DBGVAR
-#define DBGVAR(os, var) \
-  if (DEBUG) (os) << "DBG " << FILENAME << "(" << __LINE__ << ") "\
-    << __FUNCTION__ << #var << ": " << (var) << "\n"
 #endif
 
 #ifndef DBGPRINT
@@ -31,6 +21,7 @@
 #endif
 
 #define DAQmxErrChk(functionCall) if (DAQmxFailed(error = (functionCall))) goto Error;
+
 
 
 template<size_t stride, size_t N, class T, size_t count = N / stride>
