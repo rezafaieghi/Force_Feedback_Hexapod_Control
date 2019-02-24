@@ -36,7 +36,7 @@ using std::vector;
 using namespace std::chrono;
 using namespace HexapodCOMLib;					// Namespace of the MHP
 
-void GetLoadCellLoads(LoadCell::LoadCellClass& lc);
+void GetLoadCellLoads(LoadCellClass& lc);
 
 ///////////////////////////////////////////////////////////////////////////////
 ////                         Function Declarations                         ////
@@ -74,8 +74,8 @@ static map<Programs, string> programs =
 
 int main()
 {
-	LoadCell::LoadCellClass lc = LoadCell::LoadCellClass();
-	//GetLoadCellLoads(lc);
+	LoadCellClass lc = LoadCellClass();
+	GetLoadCellLoads(lc);
 
 
 	IHexapodPtr mhp;																//MHP variable that communicates to the robot
@@ -418,7 +418,7 @@ void MHPVelocity(IHexapodPtr& mhp)
 }
 
 
-void GetLoadCellLoads(LoadCell::LoadCellClass& lc)
+void GetLoadCellLoads(LoadCellClass& lc)
 {
 	float load_cell_values[DOF] = {};
 	float raw_load_cell_values[DOF] = {};
