@@ -1,0 +1,20 @@
+﻿  State.cpp
+  RootFinder.cpp
+  RBJ.cpp
+  PoleFilter.cpp
+  Param.cpp
+  Legendre.cpp
+  Filter.cpp
+  Elliptic.cpp
+  Documentation.cpp
+  Design.cpp
+  Custom.cpp
+  ChebyshevII.cpp
+  ChebyshevI.cpp
+  Cascade.cpp
+  Butterworth.cpp
+  Biquad.cpp
+  Bessel.cpp
+  Generating Code...
+Design.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  DSPFilters.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\DSPFilters.lib

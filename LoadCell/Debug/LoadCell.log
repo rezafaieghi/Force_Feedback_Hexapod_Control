@@ -1,20 +1,4 @@
-﻿  xmltok.c
-  xmlrole.c
-  xmlparse.c
-  stack.c
-  node.c
-  ftrt.c
-  ftconfig.c
-  expatls.c
-d:\github\force_feedback_hexapod_control\loadcell\expatls.c(167): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-d:\github\force_feedback_hexapod_control\loadcell\expatls.c(290): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-  dom.c
-d:\github\force_feedback_hexapod_control\loadcell\dom.c(616): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
-  Generating Code...
-  LoadCellClass.cpp
+﻿  LoadCellClass.cpp
 d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(41): warning C4005: 'TRUE': macro redefinition
   d:\github\force_feedback_hexapod_control\external\daqmx ansi c dev\include\nidaqmx.h(120): note: see previous definition of 'TRUE'
 d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(42): warning C4005: 'FALSE': macro redefinition
@@ -24,4 +8,6 @@ d:\github\force_feedback_hexapod_control\loadcell\loadcellclass.cpp(145): warnin
 d:\github\force_feedback_hexapod_control\loadcell\loadcellclass.cpp(203): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
 d:\github\force_feedback_hexapod_control\loadcell\loadcellclass.cpp(231): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
 d:\github\force_feedback_hexapod_control\loadcell\loadcellclass.cpp(312): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'const std::string'
+DSPFilters.lib(Design.obj) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+DSPFilters.lib(State.obj) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
   LoadCell.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\LoadCell.lib

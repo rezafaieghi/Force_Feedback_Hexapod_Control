@@ -1,2 +1,9 @@
-﻿  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.exe
+﻿  Source.cpp
+d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(41): warning C4005: 'TRUE': macro redefinition
+  d:\github\force_feedback_hexapod_control\external\daqmx ansi c dev\include\nidaqmx.h(120): note: see previous definition of 'TRUE'
+d:\github\force_feedback_hexapod_control\loadcell\ftsharedrt.h(42): warning C4005: 'FALSE': macro redefinition
+  d:\github\force_feedback_hexapod_control\external\daqmx ansi c dev\include\nidaqmx.h(123): note: see previous definition of 'FALSE'
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(201): warning C4101: 'ex': unreferenced local variable
+d:\github\force_feedback_hexapod_control\hexapodcontrol\source.cpp(298): warning C4101: 'ex': unreferenced local variable
+  HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.exe
   HexapodControl.vcxproj -> D:\GitHub\Force_Feedback_Hexapod_Control\Debug\HexapodControl.pdb (Full PDB)

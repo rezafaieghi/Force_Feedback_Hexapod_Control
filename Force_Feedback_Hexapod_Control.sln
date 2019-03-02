@@ -9,6 +9,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexapodControl", "HexapodCo
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadCell", "LoadCell\LoadCell.vcxproj", "{8B5D56D1-F209-44C1-AFE1-321BB787D131}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED} = {73E0C117-FF94-4F35-B8F6-9163DC4FEEED}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSPFilters", "DSPFilters\DSPFilters.vcxproj", "{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +39,14 @@ Global
 		{8B5D56D1-F209-44C1-AFE1-321BB787D131}.Release|x64.Build.0 = Release|x64
 		{8B5D56D1-F209-44C1-AFE1-321BB787D131}.Release|x86.ActiveCfg = Release|Win32
 		{8B5D56D1-F209-44C1-AFE1-321BB787D131}.Release|x86.Build.0 = Release|Win32
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Debug|x64.ActiveCfg = Debug|x64
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Debug|x64.Build.0 = Debug|x64
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Debug|x86.ActiveCfg = Debug|Win32
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Debug|x86.Build.0 = Debug|Win32
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Release|x64.ActiveCfg = Release|x64
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Release|x64.Build.0 = Release|x64
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Release|x86.ActiveCfg = Release|Win32
+		{73E0C117-FF94-4F35-B8F6-9163DC4FEEED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

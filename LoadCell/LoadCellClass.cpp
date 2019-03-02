@@ -32,23 +32,23 @@ int32 CVICALLBACK EveryNCallback(TaskHandle taskHandle,
 			package->raw_voltages[i] = package->buffer[(SAMPLES_PER_CHANNEL*(i + 1)) - 1];
 		}
 
-		//// filtering
-		//if (package->filtering_enabled) {
-		//	// first pass
-		//	package->filter->process(SAMPLES_PER_CHANNEL,
-		//		make_2d<SAMPLES_PER_CHANNEL, SAMPLES_PER_CHANNEL*DOF>(package->buffer).data());
+		// filtering
+		if (package->filtering_enabled) {
+			// first pass
+			package->filter->process(SAMPLES_PER_CHANNEL,
+				make_2d<SAMPLES_PER_CHANNEL, SAMPLES_PER_CHANNEL*DOF>(package->buffer).data());
 
-		//	// reverse array
-		//	for (unsigned int i = 0; i < DOF; ++i)
-		//	{
-		//		std::reverse(package->buffer + (SAMPLES_PER_CHANNEL * i),
-		//			package->buffer + (SAMPLES_PER_CHANNEL*(i + 1) - 1));
-		//	}
+			// reverse array
+			for (unsigned int i = 0; i < DOF; ++i)
+			{
+				std::reverse(package->buffer + (SAMPLES_PER_CHANNEL * i),
+					package->buffer + (SAMPLES_PER_CHANNEL*(i + 1) - 1));
+			}
 
-		//	// second pass
-		//	package->filter->process(SAMPLES_PER_CHANNEL,
-		//		make_2d<SAMPLES_PER_CHANNEL, SAMPLES_PER_CHANNEL*DOF>(package->buffer).data());
-		//}
+			// second pass
+			package->filter->process(SAMPLES_PER_CHANNEL,
+				make_2d<SAMPLES_PER_CHANNEL, SAMPLES_PER_CHANNEL*DOF>(package->buffer).data());
+		}
 
 		// average
 		if (package->channel_averaging_enabled == true) {
@@ -147,7 +147,7 @@ int LoadCellClass::StartDAQmx(const float sample_rate, const std::string channel
 	// package callback data
 	callback_.buffer = buffer_;
 	callback_.filtering_enabled = filter_enabled_;
-	//callback_.filter = &filter_;
+	callback_.filter = &filter_;
 	callback_.voltages = voltages_;
 	callback_.raw_voltages = raw_voltages_;
 	callback_.channel_averaging_enabled = true;
@@ -214,7 +214,7 @@ void LoadCellClass::StopDAQmx()
 
 void LoadCellClass::SetFilter(unsigned int order_number, unsigned int cutoff_freq, const bool enable_filter)
 {
-	//filter_.setup(FILTER_ORDER_NUMBER, sample_rate_, cutoff_freq);
+	filter_.setup(FILTER_ORDER_NUMBER, sample_rate_, cutoff_freq);
 	filter_enabled_ = enable_filter;
 }
 

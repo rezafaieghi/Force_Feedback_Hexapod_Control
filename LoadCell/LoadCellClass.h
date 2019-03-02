@@ -3,7 +3,7 @@
 #include "Config.h"
 #include <NIDAQmx.h>
 #include <ftconfig.h>
-//#include <DspFilters\Dsp.h>
+#include <DspFilters\Dsp.h>
 
 #include <array>
 
@@ -40,7 +40,7 @@ struct CallbackPackage
 	float *voltages;
 	float* raw_voltages;
 	bool filtering_enabled;
-	//Dsp::SimpleFilter <Dsp::Butterworth::LowPass<FILTER_ORDER_NUMBER>, DOF>* filter;
+	Dsp::SimpleFilter <Dsp::Butterworth::LowPass<FILTER_ORDER_NUMBER>, DOF>* filter;
 	bool channel_averaging_enabled;
 };
 
@@ -242,5 +242,5 @@ private:
 	// filter state
 	bool filter_enabled_ = false;
 	// double butterworth lowpass filter
-	//Dsp::SimpleFilter <Dsp::Butterworth::LowPass<FILTER_ORDER_NUMBER>, DOF> filter_;
+	Dsp::SimpleFilter <Dsp::Butterworth::LowPass<FILTER_ORDER_NUMBER>, DOF> filter_;
 };
